@@ -1,0 +1,75 @@
+/* CSS para o footer */
+
+footer {
+    display: flex;
+
+    /* Centraliza os itens no eixo horizontal */
+    justify-content: center; 
+    align-items: center;
+    
+    /*config. espaçamento*/
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer img[alt="Logo_Igreja_Metodista_4_Branco"] {
+    width: 423px; /* Tamanho ajustado para a logo */
+    height: 132px;
+
+    margin-right: 10rem;
+}
+
+footer .contact-info {
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .contact-info p {
+    
+    color: white;
+    margin: 0; /* Remove margem para um alinhamento mais próximo */
+
+    /*config. texto do paragrafo*/
+    font-size: 18px; 
+    font-style: oblique;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 10px;
+
+    /*config. espaçamento*/
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+}
+
+/* Estilos específicos para os ícones */
+footer .social-icons a img[alt="Logo Instagram"]{
+    width: 45px; 
+    height: 45px;
+
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+footer .social-icons a img[alt="Logo Facebook"]{
+    width: 45px; 
+    height: 45px;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+footer .social-icons a img[alt="Logo GoogleMaps"] {
+    width: 40px; 
+    height: 45px;
+    border-radius: 5px; 
+}
