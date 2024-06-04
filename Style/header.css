@@ -1,0 +1,58 @@
+header {
+    text-align: center; /* Centraliza o conteúdo no centro da página */
+    padding: 20px 0;
+}
+
+header img {
+    width: 423px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#barra-de-navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*config. espaçamento*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#barra-de-navegacao ul {
+    list-style: none;
+    
+    /*config. espaçamento*/
+    padding: 0;
+    margin-top: 1rem;
+
+    display: flex;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+#barra-de-navegacao ul li {
+    display: inline;
+    color: white;
+    font-size: 15px; /* Tamanho da fonte */
+}
+
+#barra-de-navegacao ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; /* Letras maiúsculas */
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#barra-de-navegacao ul li a:hover {
+    color: #ccc; /* Cor ao passar o mouse */
+}
+
+#barra-de-navegacao ul li:last-child::after {
+    content: ""; /* Remove o separador após o último item */
+}
+
+#barra-de-navegacao ul li:not(:last-child)::after {
+    content: "|"; /* Adiciona o separador | */
+    margin-left: 10px;
+    color: white;
+}
