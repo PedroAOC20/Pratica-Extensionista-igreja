@@ -1,0 +1,14 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body{
+    /*tipo de fonte*/
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+
+    /*Cores da página*/
+    background-color: #000;
+    color: #ffff;   
+}
