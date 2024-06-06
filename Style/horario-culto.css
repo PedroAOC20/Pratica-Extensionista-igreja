@@ -1,4 +1,4 @@
-#Introducao {
+#Horario-dos-cultos {
     position: relative;
     width: 100%;
     max-width: 1720px;
@@ -13,33 +13,34 @@
     overflow: hidden; /* Adiciona overflow escondido para evitar barras de rolagem */
 }
 
-#Introducao h1 {
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
-
-    /*config. texto*/
-    font-size: 3.5rem;
+#Horario-dos-cultos h1 {
+    font-size: 2.5em;
     color: white;
     z-index: 2;
+    margin: 0; /* Remove margens para ajuste */
+    padding: 20px 0; /* Espaçamento interno */
 }
 
-#Introducao h1 strong {
+#Horario-dos-cultos h1 strong {
     color: #EA030E; /* Cor vermelha destacada */
 }
 
-#Introducao p {
-    /*config. margin e posição*/
-    margin-bottom: 6rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-
-    /*config. efeito*/
+#Horario-dos-cultos ul {
+    list-style-type: none;
+    padding: 0;
     z-index: 2;
     position: relative;
+    margin: 0;
+}
 
-    /*config. texto*/
-    font-size: 1.5em;
+#Horario-dos-cultos li {
+    margin-top: 1rem;
+    font-size: 1.2em;
     color: #FFFFFF; /* Cor do texto padrão */
+}
+
+#Horario-dos-cultos li strong {
+    color: #EA030E; /* Cor vermelha para os títulos */
 }
 
 .image-container {
@@ -52,7 +53,7 @@
     align-items: center;
 }
 
-#Introducao img {
+#Horario-dos-cultos img {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +65,7 @@
 }
 
 @media (min-width: 768px) {
-    #Introducao {
+    #Horario-dos-cultos {
         padding: 0; /* Remove padding em telas maiores */
     }
 }
