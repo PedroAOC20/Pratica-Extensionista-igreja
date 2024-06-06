@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./Style/forms-conecte.css">
     <link rel="stylesheet" href="./Style/footer.css">
     <title>Igreja Metodista</title>
+
+    <script src="js/scrypt.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
                 <li><a href="#Introducao">Quem Somos</a></li>
                 <li><a href="#Ministerios">Ministério</a></li>
                 <li><a href="#Horario-dos-cultos">Cultos</a></li>
-                <li><a href="#Conecte">Conecte</a></li>
+                <li><a href="#Conecte">Conecte-se</a></li>
             </ul>
         </nav>
     </header>
@@ -169,29 +171,31 @@
                 <br>
                 Possamos Entrar Em Contato Com Você!
             </p>
-            <form>
+            <form id="FormContato">
                 <div class="field">
                     <label class="label">Digite Seu Nome:</label>
                     <div class="control">
-                        <input class="input has-background-white" type="text" placeholder="Seu nome">
+                        <input id="nome" class="input has-background-white" type="text" placeholder="Seu nome">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Digite Seu Número De Telefone:</label>
                     <div class="control">
-                        <input class="input has-background-white" type="tel" placeholder="(xx) xxxxx-xxxx">
+                        <input class="input has-background-white" id="telefone" type="tel"
+                            placeholder="(xx) xxxxx-xxxx">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Deixe Uma Mensagem Para Nós:</label>
                     <div class="control">
-                        <textarea class="textarea has-background-white" placeholder="Sua mensagem"></textarea>
+                        <textarea class="textarea has-background-white" id="email"
+                            placeholder="Sua mensagem"></textarea>
                     </div>
                 </div>
 
-                <button id="Botton-conecte" type="submit">Enviar Formulário</button>
+                <button id="Botton-conecte" onclick="minhaFuncao()" type="submit">Enviar Formulário</button>
                 </div>
             </form>
             <hr>
