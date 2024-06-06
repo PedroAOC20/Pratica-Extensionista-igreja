@@ -64,8 +64,32 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) {
-    #Horario-dos-cultos {
-        padding: 0; /* Remove padding em telas maiores */
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    #Horario-dos-cultos h1 {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+        padding: 15px 0; /* Ajusta o espaçamento interno */
+    }
+
+    #Horario-dos-cultos li {
+        font-size: 1em; /* Reduz o tamanho da fonte */
+        margin-top: 0.8rem; /* Ajusta a margem superior */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    #Horario-dos-cultos h1 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
+        padding: 10px 0; /* Ajusta o espaçamento interno */
+    }
+
+    #Horario-dos-cultos li {
+        font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte */
+        margin-top: 0.5rem; /* Ajusta a margem superior */
+    }
+
+    .image-container {
+        height: 60vh; /* Reduz a altura para celulares */
     }
 }

@@ -1,11 +1,14 @@
 header {
-    text-align: center; /* Centraliza o conteúdo no centro da página */
+    text-align: center;
+    /* Centraliza o conteúdo no centro da página */
     padding: 20px 0;
 }
 
 header img {
-    width: 423px; /* Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 423px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 #barra-de-navegacao {
@@ -20,39 +23,93 @@ header img {
 
 #barra-de-navegacao ul {
     list-style: none;
-    
+
     /*config. espaçamento*/
     padding: 0;
     margin-top: 1rem;
 
     display: flex;
-    gap: 15px; /* Espaço entre os itens */
+    gap: 15px;
+    /* Espaço entre os itens */
 }
 
 #barra-de-navegacao ul li {
     display: inline;
     color: white;
-    font-size: 15px; /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
 }
 
 #barra-de-navegacao ul li a {
     text-decoration: none;
     color: white;
-    text-transform: uppercase; /* Letras maiúsculas */
+    text-transform: uppercase;
+    /* Letras maiúsculas */
     font-weight: bold;
     padding: 0 10px;
 }
 
 #barra-de-navegacao ul li a:hover {
-    color: #ccc; /* Cor ao passar o mouse */
+    color: #ccc;
+    /* Cor ao passar o mouse */
 }
 
 #barra-de-navegacao ul li:last-child::after {
-    content: ""; /* Remove o separador após o último item */
+    content: "";
+    /* Remove o separador após o último item */
 }
 
 #barra-de-navegacao ul li:not(:last-child)::after {
-    content: "|"; /* Adiciona o separador | */
+    content: "|";
+    /* Adiciona o separador | */
     margin-left: 10px;
     color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header img {
+        width: 80%;
+        /* Reduz a largura da imagem para 80% do contêiner */
+    }
+
+    #barra-de-navegacao ul {
+        flex-direction: column;
+        /* Muda a direção dos itens para coluna */
+        gap: 10px;
+        /* Reduz o espaço entre os itens */
+    }
+
+    #barra-de-navegacao ul li {
+        font-size: 14px;
+        /* Reduz o tamanho da fonte */
+    }
+
+    #barra-de-navegacao ul li a {
+        padding: 5px 0;
+        /* Ajusta o padding */
+    }
+
+    #barra-de-navegacao ul li:not(:last-child)::after {
+        content: "";
+        /* Remove o separador para a visualização em coluna */
+    }
+}
+
+/*Responsivida da tela*/
+@media (max-width: 480px) {
+    header img {
+        width: 70%;
+        /* Reduz ainda mais a largura da imagem */
+    }
+
+    #barra-de-navegacao ul {
+        gap: 8px;
+        /* Reduz ainda mais o espaço entre os itens */
+    }
+
+    #barra-de-navegacao ul li {
+        font-size: 12px;
+        /* Reduz ainda mais o tamanho da fonte */
+    }
 }

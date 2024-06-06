@@ -10,18 +10,21 @@
     /*config. text*/
     font-size: 4.5rem;
     color: #EA030E;
-    margin-bottom: 2rem; /* Ajuste o espaçamento inferior conforme necessário */
+    margin-bottom: 2rem;
+    /* Ajuste o espaçamento inferior conforme necessário */
 }
 
 .image-container-ministerio {
     /*config. margin e posição*/
-    margin: 50px auto; /* Espaçamento entre as imagens */
+    margin: 50px auto;
+    /* Espaçamento entre as imagens */
     position: relative;
 
     /*config. margin e posição*/
     width: 100%;
     max-width: 1250px;
-    height: 465px; /* Altura fixa para a imagem */
+    height: 465px;
+    /* Altura fixa para a imagem */
     overflow: hidden;
 }
 
@@ -56,8 +59,59 @@
     margin: 1rem auto;
 }
 
-@media (min-width: 768px) {
-    #Ministerios {
-        padding: 20px;
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    #Ministerios h1 {
+        font-size: 3rem;
+        /* Reduz o tamanho da fonte */
+        margin-bottom: 1.5rem;
+        /* Ajusta o espaçamento inferior */
+    }
+
+    .image-container-ministerio {
+        height: 350px;
+        /* Ajusta a altura para tablets */
+    }
+
+    .text-overlay h2 {
+        font-size: 3rem;
+        /* Reduz o tamanho da fonte */
+    }
+
+    .text-overlay p {
+        font-size: 1.2rem;
+        /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    #Ministerios h1 {
+        font-size: 2rem;
+        /* Reduz ainda mais o tamanho da fonte */
+        margin-bottom: 1rem;
+        /* Ajusta o espaçamento inferior */
+    }
+
+    .image-container-ministerio {
+        height: 250px;
+        /* Ajusta a altura para celulares */
+    }
+
+    .text-overlay {
+        width: 90%;
+        /* Aumenta a largura da sobreposição de texto */
+        padding: 10px;
+        /* Ajusta o padding */
+    }
+
+    .text-overlay h2 {
+        font-size: 2rem;
+        /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .text-overlay p {
+        font-size: 1rem;
+        /* Reduz ainda mais o tamanho da fonte */
     }
 }

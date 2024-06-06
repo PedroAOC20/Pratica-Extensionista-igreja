@@ -63,8 +63,42 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) {
-    #Introducao {
-        padding: 0; /* Remove padding em telas maiores */
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    #Introducao h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte */
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #Introducao p {
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        padding-left: 5rem; /* Reduz o padding lateral */
+        padding-right: 5rem; /* Reduz o padding lateral */
+        margin-bottom: 4rem; /* Reduz a margem inferior */
+    }
+
+    .image-container {
+        height: 70vh; /* Reduz a altura para tablets */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    #Introducao h1 {
+        font-size: 1.8rem; /* Reduz ainda mais o tamanho da fonte */
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #Introducao p {
+        font-size: 1em; /* Reduz ainda mais o tamanho da fonte */
+        padding-left: 2rem; /* Reduz ainda mais o padding lateral */
+        padding-right: 2rem; /* Reduz ainda mais o padding lateral */
+        margin-bottom: 2rem; /* Reduz a margem inferior */
+    }
+
+    .image-container {
+        height: 60vh; /* Reduz a altura para celulares */
     }
 }

@@ -1,13 +1,10 @@
-/* CSS para o footer */
-
 footer {
     display: flex;
-
     /* Centraliza os itens no eixo horizontal */
     justify-content: center; 
     align-items: center;
     
-    /*config. espaçamento*/
+    /* Configuração de espaçamento */
     padding: 20px;
     color: white;
     font-family: Arial, sans-serif;
@@ -22,7 +19,6 @@ footer img {
 footer img[alt="Logo_Igreja_Metodista_4_Branco"] {
     width: 423px; /* Tamanho ajustado para a logo */
     height: 132px;
-
     margin-right: 10rem;
 }
 
@@ -31,11 +27,10 @@ footer .contact-info {
 }
 
 footer .contact-info p {
-    
     color: white;
     margin: 0; /* Remove margem para um alinhamento mais próximo */
 
-    /*config. texto do paragrafo*/
+    /* Configuração do texto do parágrafo */
     font-size: 18px; 
     font-style: oblique;
 }
@@ -45,7 +40,7 @@ footer .social-icons {
     justify-content: center; /* Centraliza os ícones horizontalmente */
     gap: 10px;
 
-    /*config. espaçamento*/
+    /* Configuração de espaçamento */
     margin-top: 10px;
 }
 
@@ -54,14 +49,14 @@ footer .social-icons a {
 }
 
 /* Estilos específicos para os ícones */
-footer .social-icons a img[alt="Logo Instagram"]{
+footer .social-icons a img[alt="Logo Instagram"] {
     width: 45px; 
     height: 45px;
-
     margin-right: 2rem;
     border-radius: 5px;
 }
-footer .social-icons a img[alt="Logo Facebook"]{
+
+footer .social-icons a img[alt="Logo Facebook"] {
     width: 45px; 
     height: 45px;
     margin-right: 2rem;
@@ -72,4 +67,47 @@ footer .social-icons a img[alt="Logo GoogleMaps"] {
     width: 40px; 
     height: 45px;
     border-radius: 5px; 
+}
+
+/* Responsividade para telas de celular */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    footer img[alt="Logo_Igreja_Metodista_4_Branco"] {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    footer .contact-info p {
+        font-size: 16px;
+    }
+
+    footer .social-icons {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    footer .social-icons a img {
+        width: 35px; 
+        height: 35px;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .contact-info p {
+        font-size: 14px;
+    }
+
+    footer .social-icons a img {
+        width: 30px; 
+        height: 30px;
+        margin-right: 0.5rem;
+    }
 }

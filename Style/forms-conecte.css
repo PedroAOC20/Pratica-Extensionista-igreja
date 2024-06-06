@@ -1,11 +1,11 @@
-#titulo-forms-conecte{
+#titulo-forms-conecte {
     padding-bottom: 1rem;
 
     /*config.fonte texto*/
     font-size: 60px;
 }
-#p-forms-conecte{
-    
+
+#p-forms-conecte {
     /*config.fonte texto*/
     font-size: 18px;
 }
@@ -22,9 +22,12 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     /* Largura responsiva */
-    width: 90%; /* Ocupa 90% da largura da tela */
-    max-width: 600px; /* Limita a largura máxima em telas maiores */
-    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    width: 90%;
+    /* Ocupa 90% da largura da tela */
+    max-width: 600px;
+    /* Limita a largura máxima em telas maiores */
+    margin: 0 auto;
+    /* Centraliza o formulário horizontalmente */
 }
 
 .field {
@@ -36,19 +39,24 @@ form {
     font-weight: bold;
 }
 
-.input, .textarea {
+.input,
+.textarea {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
 
     /* Cores com melhor contraste */
-    background-color: #F2F2F2; /* Fundo mais claro */
-    color: #333; /* Texto mais escuro */
+    background-color: #F2F2F2;
+    /* Fundo mais claro */
+    color: #333;
+    /* Texto mais escuro */
 }
 
-.input::placeholder, .textarea::placeholder {
-    color: #999; /* Cor de placeholder mais clara */
+.input::placeholder,
+.textarea::placeholder {
+    color: #999;
+    /* Cor de placeholder mais clara */
 }
 
 #Botton-conecte {
@@ -71,4 +79,56 @@ form {
 
 #Botton-conecte:hover {
     background-color: #C4020C;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #titulo-forms-conecte {
+        /* Reduz o tamanho da fonte para tablets */
+        font-size: 48px;
+    }
+
+    #p-forms-conecte {
+        /* Reduz o tamanho da fonte para tablets */
+        font-size: 16px;
+    }
+
+    form {
+        /* Reduz o padding para tablets */
+        padding: 1.5rem;
+    }
+
+    #Botton-conecte {
+        /* Reduz o tamanho da fonte do botão */
+        font-size: 16px;
+
+        /* Ajusta o padding do botão */
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo-forms-conecte {
+        /* Reduz o tamanho da fonte para celulares */
+        font-size: 36px;
+    }
+
+    #p-forms-conecte {
+        /* Reduz o tamanho da fonte para celulares */
+        font-size: 14px;
+    }
+
+    form {
+        /* Reduz o padding para celulares */
+        padding: 1rem;
+    }
+
+    #Botton-conecte {
+        /* Reduz o tamanho da fonte do botão */
+        font-size: 14px;
+
+        /* Ajusta o padding do botão */
+        padding: 0.5rem 0.75rem;
+
+    }
 }
